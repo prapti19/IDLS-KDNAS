@@ -1,0 +1,16 @@
+torch
+pytorch-lightning >= 2.0
+torchmetrics
+lightgbm<4.0.0
+onnx
+onnxsim
+onnxruntime
+peewee
+graphviz
+gym
+tianshou >= 0.4.1
+matplotlib
+sympy
+timm >= 0.5.4
+typing_extensions >= 4.7.0
+nni
