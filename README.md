@@ -31,8 +31,15 @@ The Repository is organised as follows:
 
 ## Results
 
+### Accuracy - time - model parameters comparision
 <img width="672" alt="CIFAR10_AccVsTime" src="https://github.com/prapti19/IDLS-KDNAS/assets/29619950/0247fef6-fa58-496c-b7ec-778acf22b6ba">
 <img width="672" alt="CIFAR100_AccVsTime" src="https://github.com/prapti19/IDLS-KDNAS/assets/29619950/fbe5349d-33a5-400a-8588-33ee65599b12">
+
+- The radius in the above bubble charts represent the total model parameters in MB.
+- The tradeoff between accuracy, time and model size is visible in the graph, and it can be seen that our method of decoupling KD and NAS is much more compute efficient with comparable accuracy to other SOTA NAS models.
+
+### Experiments with different search spaces in NAS
+
 <img width="782" alt="NAS_Search_Space" src="https://github.com/prapti19/IDLS-KDNAS/assets/29619950/c30b295a-4782-4bdd-aea0-3e382694c1fc">
 
 
