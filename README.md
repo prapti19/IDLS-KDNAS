@@ -2,19 +2,35 @@
 
 ## Description
 
+This project revolves around KD-NAS( Knowledge Distillation with Neural Architecture Search), and how KDNAS is a much cheaper process in terms of compute and time to get comparable accuracy as SOTA NAS models.
 
-## Project milestones
 
+## Completed project milestones
+1. Train a teacher model for CIFAR-10 and get the best accuracy
+2. Experiment with various search spaces and search strategies in NAS, to get the best student architecture in terms of time and compute.
+3. Retrain the student with the best architecture
+4. Do Knowledge Distillation from teacher to student
+5. Replicate Step 1-4 with modifications for CIFAR-100
 
 ## Code Structure
 
+The Repository is organised as follows:
+1. [requirements.txt](requirements.txt) has all the dependencies for setting up the environment
+2. The [notebooks](notebooks) folder has 3 notebooks for CIFAR-10 and CIFAR-100 respectively:
+ - teacher: to train teacher model. Resnet101 for CIFAR10 and VITB16_224 for CIFAR-100
+ - DARTS-search: to search the best search space, from DARTS strategy and then retrain with best architecture to get best student model
+ - Knowledge_Distillation: load best teacher and student model and then do response-based KD 
+
+
+
 
 ## Instructions to run
+1. ``` pip install -r requirements.txt ```
+2. For any dataset run the notebooks in the following sequence: train_teacher -> DARTS_search -> Knowledge_Distillation
 
 
 ## Results
 
 
 
-## Models:
-1. Teacher cifar 10 :https://drive.google.com/file/d/1iT2c8fwKyHxRZYcgZJfzd9yL3LLX0yg-/view?usp=drive_link
+
